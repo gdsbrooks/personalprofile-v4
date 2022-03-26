@@ -1,0 +1,14 @@
+{
+    "name" : {
+       "first" : "george",
+       "last" : "brooks",
+       "nickname" : "",
+       "full" : ""
+    },
+
+    "avatar" : {
+        "picUrl" : "",
+        "altText" : "George Brooks"
+    }
+    
+}
