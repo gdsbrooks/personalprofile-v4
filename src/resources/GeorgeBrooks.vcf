@@ -1,0 +1,18 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Brooks;George;;;
+FN:George Brooks
+ORG:Web Developer;
+EMAIL;type=INTERNET;type=HOME;type=pref:george@georgebrooks.dev
+item1.TEL;type=pref:+1 2064763991
+item1.X-ABLabel:USA
+item2.TEL:+351 912620081
+item2.X-ABLabel:PORTUGAL
+NOTE:Web Development\, Frontend Development\, Web Apps\, JavaScript\, React\, Node.JS. 
+item3.URL;type=pref:georgebrooks.dev
+item3.X-ABLabel:_$!<HomePage>!$_
+item4.URL:linked.com/in/george.ds.brooks
+item4.X-ABLabel:linkedIn
+item5.URL:github.com/gdsbrooks
+item5.X-ABLabel:githubs
+END:VCARD
