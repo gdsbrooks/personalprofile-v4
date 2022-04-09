@@ -3,10 +3,21 @@ import React from 'react'
 
 function About() {
   return (
-    <div>
-        <Typography variant='h1'>Hi! I'm George</Typography>
-    </div>
+    <>
+        gi
+    </>
   )
 }
 
 export default About
+
+/* Hi! I'm 
+GEORGE BROOKS.
+I build things for the web.
+
+I'm a web developer keen on creating powerful web apps 
+and dynamic, responsive front-end designs.
+I enjoy learning to use new technologies and
+solving problems with simple, elegant solutions.
+
+*/
