@@ -1,7 +1,9 @@
-import { Toolbar, Container } from '@mui/material';
+import { Toolbar, Container, Typography } from '@mui/material';
 import './App.css';
 import About from './components/About';
+import Splash from './components/Splash'
 import Contact from './components/Contact';
+import sections from './components/sections'
 
 import TopBar from './components/TopBar';
 
@@ -11,12 +13,22 @@ function App() {
     <div className="App">
     
    <TopBar/>
-   <Toolbar/>
    <Container maxWidth='md'>
-   <About/>
+   <Splash/>
+
+   
+   {sections.map((section) => {
+     return (
+     <section id={section.name}>
+     <Typography variant='h3'>{section.name[0].toUpperCase() + section.name.slice(1)}</Typography>
+       {section.component}
+     </section>
+     
+     )
+   })}
+   
    {/* <Contact/> */}
    </Container>
-x
      
     </div >
   );

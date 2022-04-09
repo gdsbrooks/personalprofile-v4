@@ -1,20 +1,30 @@
+import About from "./About" 
+import Contact from "./Contact"
+import Portfolio from './Portfolio'
+import Experience from './Experience'
+
 const sections = 
 [
     { 
         name: "about",
+        component: <About/>
         
 }, 
 
     { 
-        name: "experience" 
+        name: "experience",
+        component: <Experience/>
     }, 
 
     { 
-        name: "portfolio" 
+        name: "portfolio",
+        component: <Portfolio/>
+
     }, 
 
     { 
-        name: "contact" 
+        name: "contact",
+        component: <Contact/>
     }
 ]
 

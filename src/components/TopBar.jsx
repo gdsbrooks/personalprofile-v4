@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import resume from '../resources/ResumeApril2022.pdf'
 import baldy from '../resources/bald-brooklyn.png'
-import { AppBar, Box, Button, Drawer, IconButton, Toolbar, Stack, Typography, Divider, Avatar, useScrollTrigger, Slide } from '@mui/material'
+import { AppBar, Box, Button, Drawer, IconButton, Toolbar, Stack, Typography, Divider, Avatar, useScrollTrigger, Slide, Link } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -38,10 +38,10 @@ function TopBar() {
                         <Avatar src={baldy} alt="line drawing of george. He has a bald head, square glasses and a commanding yet invitingly ample mustache" />
                         <Typography variant="h4" sx={{ flexGrow: 1 }}>George Brooks</Typography>
 
-                        <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+                        <Box sx={{ display: { xs: 'none', md: 'flex', gap: 15} }}>
                             {sections.map((section) => {
-                                return (
-                                    <Button variant="text" size='large' color='inherit'>{section.name}</Button>
+                                return (   
+                                    <Link variant="h6" color="inherit" href={'#' + section.name}> {section.name} </Link>
                                 )
                             })}
                         </Box>
