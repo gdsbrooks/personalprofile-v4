@@ -38,10 +38,16 @@ function TopBar() {
                         <Avatar src={baldy} alt="line drawing of george. He has a bald head, square glasses and a commanding yet invitingly ample mustache" />
                         <Typography variant="h4" sx={{ flexGrow: 1 }}>George Brooks</Typography>
 
-                        <Box sx={{ display: { xs: 'none', md: 'flex', gap: 15} }}>
+                        <Box sx={{ display: { xs: 'none', md: 'flex', gap: 15 } }}>
                             {sections.map((section) => {
-                                return (   
-                                    <Link variant="h6" color="inherit" href={'#' + section.name}> {section.name} </Link>
+                                return (
+                                    <Button
+                                        href={'#' + section.name}
+                                        variant="text"
+                                        color="inherit"
+                                        >
+                                        {section.name}
+                                    </Button>
                                 )
                             })}
                         </Box>
@@ -72,7 +78,7 @@ function TopBar() {
                 >
                     {sections.map((section) => {
                         return (
-                            <Button size='large' color='inherit' sx={{ m: 2 }}>{section.name}</Button>
+                            <Button href={"#"+section.name} size='large' color='inherit' sx={{ m: 2 }}>{section.name}</Button>
                         )
                     })}
 

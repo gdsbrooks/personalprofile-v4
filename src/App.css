@@ -1,3 +1,17 @@
 section {
     padding-block: 100px;
+    min-block-size: 50vh;
+
+}
+section>h3 {
+    display: flex;
+    align-items: center;
+}
+section>h3::after {
+    content: '';
+    display: block;
+    block-size: 2px;
+    inline-size: 100%;
+    background-color: grey;
+    margin-inline: 0.5em;
 }
