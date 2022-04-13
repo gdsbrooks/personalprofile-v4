@@ -4,7 +4,6 @@ import About from './components/About';
 import Splash from './components/Splash'
 import Contact from './components/Contact';
 import sections from './components/sections'
-
 import TopBar from './components/TopBar';
 
 function App() {

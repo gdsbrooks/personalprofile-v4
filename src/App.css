@@ -1,17 +1,57 @@
 section {
-    padding-block: 100px;
-    min-block-size: 50vh;
+  padding-block: 100px;
+  min-block-size: 50vh;
+}
+section > h3.MuiTypography-h3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+section > h3::after {
+  content: "";
+  display: block;
+  block-size: 2px;
+  inline-size: 100%;
+  background-color: grey;
+  margin-inline: 0.5em;
+}
 
+#profile-color-layer {
+  /* Outer wrapper div - defines size and starting colors */
+
+  background: 
+    linear-gradient(
+        225deg,
+        rgba(97, 219, 251, 1) 30%, 
+        rgba(97, 219, 251, 0) 65%),
+    linear-gradient(
+        90deg,
+      rgba(110, 148, 250, 0.8) 10%,
+      rgba(110, 148, 250, 0.3) 65%
+    );
 }
-section>h3 {
-    display: flex;
-    align-items: center;
+
+#hue-rotate-layer {
+  /* Animation layer. Transparent. Contains the profile picture. */
+  /* Applies backdrop-filter(hue-rotation) --to wrapper layer below-- */
+
+  
+  background: transparent;
+  animation: hue-rotate 60s linear 5s infinite backwards;
 }
-section>h3::after {
-    content: '';
-    display: block;
-    block-size: 2px;
-    inline-size: 100%;
-    background-color: grey;
-    margin-inline: 0.5em;
+
+@keyframes hue-rotate {
+  0% {
+    -webkit-backdrop-filter: hue-rotate(0deg);
+    backdrop-filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-backdrop-filter: hue-rotate(359deg);
+    backdrop-filter: hue-rotate(359deg);
+  }
+}
+/* Profile img. Transparent bg. */
+#hue-rotate-layer img {
+  background: transparent;
+  max-inline-size: 100%;
 }

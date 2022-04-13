@@ -50,6 +50,13 @@ function TopBar() {
                                     </Button>
                                 )
                             })}
+                        <Button
+                        href={resume}
+                        target="_blank"
+                        variant="outlined"
+                        color="inherit">                        
+                        My Resume
+                    </Button>
                         </Box>
 
                         <IconButton
@@ -85,7 +92,7 @@ function TopBar() {
                     <Button
                         href={resume}
                         target="_blank"
-                        variant="contained"
+                        variant="outlined"
                         color="secondary"
                         sx={{ m: 2 }}>
                         My Resume
