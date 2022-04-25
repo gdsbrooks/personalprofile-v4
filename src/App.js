@@ -17,9 +17,10 @@ function App() {
 
    
    {sections.map((section) => {
+     section.header = !section.title ? section.name : section.title;
      return (
      <section id={section.name}>
-     <Typography variant='h3'>{section.name[0].toUpperCase() + section.name.slice(1)}</Typography>
+     <Typography variant='h3'>{section.header[0].toUpperCase() + section.header.slice(1)}</Typography>
        {section.component}
      </section>
      

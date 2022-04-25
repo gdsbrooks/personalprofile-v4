@@ -36,7 +36,7 @@ function TopBar() {
                 <AppBar sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
                     <Toolbar>
                         <Avatar src={baldy} alt="line drawing of george. He has a bald head, square glasses and a commanding yet invitingly ample mustache" />
-                        <Typography variant="h4" sx={{ flexGrow: 1 }}>George Brooks</Typography>
+                        <Link href='#' underline='hover' color='white' variant="h4" sx={{ flexGrow: 1 }}>George Brooks</Link>
 
                         <Box sx={{ display: { xs: 'none', md: 'flex', gap: 15 } }}>
                             {sections.map((section) => {

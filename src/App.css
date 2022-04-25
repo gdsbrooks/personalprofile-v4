@@ -5,16 +5,36 @@ section {
 section > h3.MuiTypography-h3 {
   display: flex;
   align-items: center;
+  flex-grow: 2;
   margin-bottom: 2rem;
 }
 section > h3::after {
   content: "";
   display: block;
   block-size: 2px;
-  inline-size: 100%;
+  flex-grow: 1;  
   background-color: grey;
   margin-inline: 0.5em;
 }
+
+section emphasis {
+  color: green;
+  font-weight: bolder;
+  font-size: 120%;
+}
+
+section .side-by-side {
+  display: flex;
+  flex-wrap: wrap;
+}
+section .side-by-side ul {
+  flex-grow: 3;
+}
+section .side-by-side img {
+  max-width: 25%;
+  flex-grow: 1;
+flex-basis: 200px;}
+
 
 #profile-color-layer {
   /* Outer wrapper div - defines size and starting colors */

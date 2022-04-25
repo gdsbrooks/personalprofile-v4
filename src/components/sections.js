@@ -7,6 +7,7 @@ const sections =
 [
     { 
         name: "about",
+        title: 'About Me',
         component: <About/>
         
 }, 
@@ -18,12 +19,14 @@ const sections =
 
     { 
         name: "portfolio",
+        title: "What I've Done",
         component: <Portfolio/>
 
     }, 
 
     { 
         name: "contact",
+
         component: <Contact/>
     }
 ]
