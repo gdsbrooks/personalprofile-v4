@@ -23,6 +23,35 @@ section emphasis {
   font-size: 120%;
 }
 
+strong {
+  color: #FFF;
+  padding-inline: 0.1rem;
+  margin: 0.1rem;
+  background-color: #2196f3 ;
+}
+
+strong.js{
+  background-color: #F7DF1E;
+  color: #000;
+}
+strong.node {
+background-color: #339933;
+}
+
+
+strong.react {
+background-color: #61DAFB;
+}
+
+strong.express {
+background-color: #000000 ;
+
+}
+
+strong.mongo{
+background-color: #47A248 ;
+}
+
 section .side-by-side {
   display: flex;
   flex-wrap: wrap;
